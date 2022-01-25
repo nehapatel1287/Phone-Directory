@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Header from './Header';
 
-function App() {
+class App extends Component {
+  render(){
   return (
-    <div className="App">
-      <div>
-        Phone Directory
-      </div>
+    <div>
+   <Header/>
       <button> Add</button>
       <div>
         <span>Name</span>
@@ -14,6 +13,7 @@ function App() {
       </div>
     </div>
   );
+}
 }
 
 export default App;
